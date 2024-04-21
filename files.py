@@ -122,10 +122,21 @@ print("Original set of random numbers:", random_numbers_set)
 count_less_than_30 = sum(1 for num in random_numbers_set if num < 30)
 print("Count of numbers less than 30:", count_less_than_30)
 
+
+
 # Delete all the numbers less than 30 from the set
 random_numbers_set = {num for num in random_numbers_set if num >= 30}
 
 print("Set after deleting numbers less than 30:", random_numbers_set)
+
+#WAP to merge the two dictionaries into third dictionary
+boys ={'Nilesh': 41,'Aditya':42,'Ravi':47}
+girls={'Rashika':38,'Nandani':43,'Rashika':45}
+combined ={**boys,**girls}
+print(combined)
+combined ={**boys,**girls}
+print(combined)
+
 
 
 
