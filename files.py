@@ -186,3 +186,30 @@ if __name__ == "__main__":
     print("\nAre obj1 and obj3 of the same type?", type_same)
     print("Do obj1 and obj3 have the same attributes?", attrs_same)
     print("Are obj1 and obj3 pointing to the same object?", same_object)
+
+
+# use of filter function
+def fun(n):
+    if n%5 == 0:
+        return True
+    else:
+        return False
+lst1 = ['A','X','Y','3','M','4','D']
+f1 = filter(str.isalpha,lst1)
+print(list(f1))
+lst2 = [5,18,10,6]
+f2 = filter(fun,lst2)
+print(list(f2))
+
+# use of reduce() function
+import reduce
+def getsum(x,y):
+    return x+y
+def getprod(x,y):
+    return x*y
+lst = [1,2,3,4,5]
+s = reduce(getsum,lst)
+p = reduce(getprod,lst)
+print(s)
+print(p)
+
