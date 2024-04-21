@@ -202,7 +202,7 @@ f2 = filter(fun,lst2)
 print(list(f2))
 
 # use of reduce() function
-import reduce
+from functools import reduce
 def getsum(x,y):
     return x+y
 def getprod(x,y):
