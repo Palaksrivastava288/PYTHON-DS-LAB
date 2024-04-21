@@ -137,6 +137,19 @@ print(combined)
 combined ={**boys,**girls}
 print(combined)
 
+#WAP to create a calender in Python
+import calendar
+def create_calendar(year, month):
+    # Using the calendar module to generate the calendar for the given year and month
+    cal = calendar.month(year, month)
+    return cal
+if __name__ == "__main__":
+    year = int(input("Enter the year: "))
+    month = int(input("Enter the month: "))
+    print("\nCalendar:")
+    print(create_calendar(year, month))
+
+
 
 
 
