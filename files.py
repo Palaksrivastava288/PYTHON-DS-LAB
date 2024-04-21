@@ -25,3 +25,29 @@ print(math.floor(-x))
 print(math.ceil(-x))
 print(math.modf(x))
 
+s = "Bamboozled"
+#extract B a
+print(s[0]),s[1]
+print(s[-10],s[-9])
+#extract mboozled
+print(s[2:10])
+print(s[2:])
+print(s[-8])
+# extract Bamboo
+print(s[0:6])
+print(s[-6:])
+print(s[-10:4])
+print(s[:-4])
+# reverse bamboozled
+print([-1])
+
+print(s[0:10:1])
+print(s[0:10:2])
+print(s[0:10:3])
+print(s[0:10:3])
+print(s[0:10:4])
+
+s=s+'HYPE'
+print(s)
+s=s[:6]+'Monger'+ s[-1]
+print(s)
