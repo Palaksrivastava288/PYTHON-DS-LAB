@@ -149,7 +149,13 @@ if __name__ == "__main__":
     print("\nCalendar:")
     print(create_calendar(year, month))
 
-
-
-
-
+    #WAP to calculate and print paper sizes A0,A1,A2.....A8 using recursion
+    def papersizes(i, n, l, b):
+        if n!= 0:
+            print(f'A{i}: L={int(l)}B= {int(b)}')
+            newb =l/2
+            newl =b
+            n -=1
+            i +=1
+            papersizes(i, n, newl, newb)
+papersizes(0,7,1189,841)
