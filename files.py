@@ -51,3 +51,13 @@ s=s+'HYPE'
 print(s)
 s=s[:6]+'Monger'+ s[-1]
 print(s)
+
+#the driver should be insured or not
+ms =input('enter martial status:')
+s = input ('enter sex:')
+age =int(input('enter age:'))
+if (ms == 'm') or (ms == 'u' and s == 'm' and age>30)\
+    or(ms == 'u' and s == 'f' and age>25):
+    print('insured')
+else:
+    print('not insured')
